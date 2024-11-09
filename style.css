@@ -1,0 +1,330 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+        }
+        body {
+            color: #333;
+            background-color: #f5f5f5;
+			
+        }
+        /* شريط التنقل */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .nav-links a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+        }
+        .nav-links a:hover {
+            color: #6c63ff;
+        }
+        /* تنسيق الأقسام */
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+		
+	
+        /* قسم "حول" */
+        .about-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: #fff;
+            text-align: left;
+        }
+        .about-section img {
+            width: 300px;
+            height: auto;
+        }
+        .about-info {
+            max-width: 500px;
+        }
+        .about-info h1 {
+			font-style: italic;
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .about-info p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #666;
+        }
+        /* أرقام الإحصائيات */
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .stat {
+            text-align: center;
+        }
+        .stat h3 {
+            font-size: 24px;
+            color: #6c63ff;
+        }
+        .stat span {
+            font-size: 14px;
+            color: #666;
+        }
+        /* زر تحميل السيرة الذاتية */
+        .download-cv {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #6c63ff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+			align-items: center;
+			
+			 
+        }
+       .back {
+            padding: 10px 20px;
+		    font-size: 16px;
+            background-color: #6c63ff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+		   
+			
+		 }
+        .download-cv:hover {
+            background-color: #5a52d4;
+        }
+        /* قسم المهارات */
+        .skills-section h2, .services-section h2, .portfolio-section h2, .contact-section h2 {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .skills-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .skill-item {
+			margin-left:  60%;
+            width: 120px;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        /* قسم الخدمات */
+        .services-section .service {
+            width: 100%;
+            max-width: 200px;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+        }
+        /* معرض الأعمال */
+        .portfolio-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .portfolio-gallery img {
+            width: 100%;
+            max-width: 250px;
+border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        /* قسم الاتصال */
+        .contact-section form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .contact-section input, .contact-section textarea {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .contact-section button {
+            padding: 10px;
+            background-color: #6c63ff;
+            color: #fff;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+		/* الألوان الأساسية */
+:root {
+    --primary-color: #34495e;     /* أزرق داكن */
+    --secondary-color: #dc3545;   /* أخضر فاتح */
+    --background-color: #cd5c5c57;  /* خلفية هادئة */
+    --text-color: #333;           /* لون النص */
+    --accent-color: #3498db;      /* لون مميز */
+}
+
+/* تنسيق الجسم العام */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+}
+
+/* شريط التنقل */
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #dee2e6;
+}
+.navbar-brand2 {
+    color: #dc3545;
+	 margin: 0 15px;
+       
+     font-weight: 600
+	
+	
+}
+
+.navbar .nav-link:hover {
+    color: var(--secondary-color);
+}
+
+/* الأقسام */
+section {
+    padding: 60px 0;
+}
+
+/* عناوين الأقسام */
+h2 {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* قسم المهارات */
+.skill-item {
+    background-color: var(--accent-color);
+    color: #ffffff;
+    border-radius: 8px;
+    font-size: 1.2em;
+}
+
+/* البطاقات في قسم الخدمات */
+.card {
+    border: none;
+    background-color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    color: var(--primary-color);
+}
+
+.card-text {
+    color: #555;
+}
+
+/* المعرض */
+.img-fluid {
+    border: 3px solid var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.img-fluid:hover {
+    transform: scale(1.05);
+    border-color: var(--secondary-color);
+}
+
+/* قسم "اتصل بنا" */
+form input,
+form textarea {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #27ae60;
+}
+
+/* روابط التمرير الناعم */
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+/* الفوتر */
+footer {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+
+         /* تنسيق الصور */
+        .image-container {
+            display: flex; /* لعرض الصور بجانب بعضها */
+            justify-content: center ; /* لضبط الصور في منتصف الشاشة */
+            gap: 20px; /* مسافة بين الصور */
+			 margin: 50;
+            padding: 50;
+			  
+
+        }
+
+        .image-container img {
+            width: 500px; /* عرض الصورة الأولي */
+            height: auto; /* ليكون الارتفاع متناسب مع العرض */
+            transition: transform 0.3s ease, filter 0.3s ease; /* تأثير التكبير وتغيير اللون */
+            cursor: pointer; /* تحويل المؤشر عند التمرير */
+        }
+
+        .image-container img:hover {
+            transform: scale(1.1); /* تكبير الصورة عند تمرير الماوس */
+            filter: sepia(80%) hue-rotate(180deg) saturate(150%); /* تغيير لون الصورة */
+        }
