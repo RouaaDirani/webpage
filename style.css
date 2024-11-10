@@ -111,7 +111,7 @@
         .skills-section h2, .services-section h2, .portfolio-section h2, .contact-section h2 {
             font-size: 32px;
             color: #333;
-            margin-bottom: 50px;
+            margin-bottom: 25px;
         }
         .skills-list {
             display: flex;
