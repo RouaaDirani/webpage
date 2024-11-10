@@ -10,7 +10,6 @@ $(document).ready(function () {
             alert("من فضلك أكمل جميع الحقول!");
         }
     });
-
     // تأثير التمرير الناعم (Smooth Scroll) عند النقر على روابط التنقل
     $('a[href^="#"]').on("click", function (event) {
         event.preventDefault();
@@ -23,7 +22,6 @@ $(document).ready(function () {
         );
     });
 });
-
 // تأثير عند التمرير فوق الصور في المعرض (Portfolio)
 document.querySelectorAll('.img-fluid').forEach(img => {
     img.addEventListener('mouseover', function() {
